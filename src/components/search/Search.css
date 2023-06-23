@@ -1,0 +1,92 @@
+.wrapper {
+  width: 450px;
+  background: #fff;
+  padding: 30px;
+}
+
+.wrapper .searchDiv {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .searchDiv .searchInput {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 17px;
+  outline: none;
+  /* Remove the border when clicked */
+}
+
+.searchDiv .searchInput:focus ~ .searchLabel,
+.searchDiv .searchInput:valid ~ .searchLabel {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  font-size: 16px;
+}
+
+.wrapper .searchDiv .searchLabel {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.wrapper .searchDiv .underLine {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+}
+
+.searchDiv .underLine:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #296fd9;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.searchDiv .searchInput:focus ~ .underLine:before,
+.searchDiv .searchInput:valid ~ .underLine:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  /* Mobile devices */
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Tablet and desktop devices */
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .wrapper {
+    width: 450px;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+}
+/*# sourceMappingURL=Search.css.map */

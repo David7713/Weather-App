@@ -1,0 +1,113 @@
+.currentWeather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.city {
+  font-size: 55px;
+}
+
+.cityDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cityDetailsRightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  /* Adjust the margin to push it to the right */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Center the items horizontally */
+}
+
+.rightSide {
+  font-size: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Responsive Adjustments */
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .currentWeather {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .city {
+    font-size: 40px;
+    text-align: center;
+  }
+  .cityDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  .cityDetailsRightSide {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .rightSide {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .currentWeather {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .city {
+    font-size: 50px;
+  }
+  .cityDetails {
+    margin-top: 40px;
+  }
+}
+
+/* Desktop Devices */
+@media (min-width: 1024px) {
+  /* Add your desktop-specific styles here */
+}
+/*# sourceMappingURL=CurrentWeather.css.map */

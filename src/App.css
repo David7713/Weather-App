@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  /* background: rgb(255,255,255);
+
+  
+  background: linear-gradient(30deg, rgba(255,255,255,1) 0%, rgba(172,217,255,1) 0%, rgba(255,255,255,1) 71%, rgba(247,251,255,1) 90%); */
+  
+
+ 
+}
+  /* background-image: url('C:/Users/HDcomputers/Desktop/Weather-App/weather-app/public/doo.jpg');
+  background-size: cover;
+  background-position: center;
+  color:white; */
