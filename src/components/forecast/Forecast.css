@@ -1,1 +1,49 @@
-/* No CSS *//*# sourceMappingURL=Forecast.css.map */
+.forecast-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+}
+
+.forecast-item {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.min-max {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .forecast-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+    /* Adjust the margin for mobile */
+  }
+  .forecast-item {
+    margin-top: 0;
+    /* Remove the top margin for mobile */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .forecast-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-top: 75px;
+    /* Adjust the margin for tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  .forecast-container {
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+    margin-top: 100px;
+    /* Adjust the margin for desktop */
+  }
+}
+/*# sourceMappingURL=Forecast.css.map */

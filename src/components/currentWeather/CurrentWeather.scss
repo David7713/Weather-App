@@ -1,6 +1,7 @@
 .currentWeather {
     display: flex;
     justify-content: space-evenly;
+    font-weight: bolder;
   }
   
   .city {
@@ -10,9 +11,11 @@
   .cityDetails {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
   }
-
+.currentDate{
+  font-size: 30px;
+}
   
   .cityDetailsRightSide {
     display: flex;
@@ -73,6 +76,7 @@
   
     .cityDetails {
       margin-top: 40px;
+      
     }
   }
   
@@ -81,3 +85,8 @@
     /* Add your desktop-specific styles here */
   }
   
+  .line{
+    width: 1000px;
+    height: 30px;
+    background-color: red;
+  }
