@@ -1,6 +1,5 @@
 .wrapper {
   width: 450px;
-  background: #fff;
   padding: 30px;
 }
 
@@ -14,8 +13,9 @@
   height: 100%;
   width: 100%;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid black;
   font-size: 17px;
+  background-color: #acd9ff;
   outline: none;
   /* Remove the border when clicked */
 }
@@ -31,7 +31,7 @@
   position: absolute;
   bottom: 10px;
   left: 0;
-  color: gray;
+  color: black;
   pointer-events: none;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;

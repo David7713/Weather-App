@@ -4,13 +4,14 @@
 
 .wrapper {
   width: 450px;
-  background: #fff;
+  
   padding: 30px;
 }
 
 .wrapper .searchDiv {
   height: 40px;
   width: 100%;
+
   position: relative;
 }
 
@@ -18,8 +19,9 @@
   height: 100%;
   width: 100%;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid black;
   font-size: 17px;
+  background-color:#acd9ff;
   outline: none; /* Remove the border when clicked */
 }
 
@@ -33,7 +35,7 @@
   position: absolute;
   bottom: 10px;
   left: 0;
-  color: gray;
+  color: black;
   pointer-events: none;
   transition: all 0.7s ease;
 }

@@ -8,7 +8,7 @@
 
 .forecast-item {
   text-align: center;
-  font-weight: bolder;
+  border-right: 1px solid black;
 }
 
 .min-max {

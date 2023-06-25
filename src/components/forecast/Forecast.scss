@@ -2,12 +2,13 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 1px;
+
   }
   
   .forecast-item {
 
     text-align: center;
-    font-weight: bolder;
+    border-right: 1px solid black;
 
   }
   

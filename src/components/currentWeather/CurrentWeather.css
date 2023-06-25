@@ -6,6 +6,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-weight: bolder;
+  color: black;
 }
 
 .city {
@@ -93,6 +94,7 @@
     font-size: 100px;
     text-align: center;
     margin-top: 30px;
+    color: black;
   }
 }
 
@@ -114,11 +116,5 @@
 /* Desktop Devices */
 @media (min-width: 1024px) {
   /* Add your desktop-specific styles here */
-}
-
-.line {
-  width: 1000px;
-  height: 30px;
-  background-color: red;
 }
 /*# sourceMappingURL=CurrentWeather.css.map */
