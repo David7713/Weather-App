@@ -38,17 +38,3 @@ const CurrentWeather = ({ data }) => {
 
 export default CurrentWeather;
 
-{/* <div className='top'>
-<p className='city'>{data.city}</p>
-<p className='weatherDescription'>{data.weather[0].description}</p>
-</div>
-<img alt='weather' src={`icons/${data.weather[0].icon}.png`} />
-<span>{Math.round(data.main.temp)}C</span>
-<span>Feels Like</span>
-<span>{Math.round(data.main.feels_like)}</span>
-<span>Humidity</span>
-<span>{data.main.humidity}</span>
-<span>wind</span>
-<span>{data.wind.speed}</span>
-<span>Pressure</span>
-<span>{data.main.pressure}hPA</span> */}

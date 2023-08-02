@@ -26,6 +26,7 @@
   .forecast-item {
     margin-top: 0;
     /* Remove the top margin for mobile */
+    border-top: 1px solid black;
   }
 }
 
