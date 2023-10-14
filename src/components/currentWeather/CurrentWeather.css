@@ -5,12 +5,16 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-weight: bolder;
-  color: black;
+  color: white;
 }
 
 .city {
   font-size: 55px;
+}
+
+.current-weather-image {
+  width: 200px;
+  height: 200px;
 }
 
 .cityDetails {
@@ -27,6 +31,10 @@
   font-size: 30px;
 }
 
+.weatherDescription {
+  font-size: 30px;
+}
+
 .cityDetailsRightSide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,18 +44,16 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: auto;
-  /* Adjust the margin to push it to the right */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Center the items horizontally */
 }
 
 .rightSide {
-  font-size: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -57,7 +63,6 @@
           justify-content: center;
 }
 
-/* Responsive Adjustments */
 /* Mobile Devices */
 @media (max-width: 767px) {
   .currentWeather {
@@ -94,27 +99,54 @@
     font-size: 100px;
     text-align: center;
     margin-top: 30px;
-    color: black;
   }
 }
 
-/* Tablet Devices */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 767px) {
   .currentWeather {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .city {
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .currentDate {
+    font-size: 20px;
+  }
+  .weatherDescription {
+    font-size: 25px;
   }
   .cityDetails {
-    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
   }
-}
-
-/* Desktop Devices */
-@media (min-width: 1024px) {
-  /* Add your desktop-specific styles here */
+  .cityDetailsRightSide {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .rightSide {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .current-weather-image {
+    width: 150px;
+    height: 150px;
+  }
 }
 /*# sourceMappingURL=CurrentWeather.css.map */

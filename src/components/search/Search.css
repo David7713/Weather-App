@@ -13,11 +13,11 @@
   height: 100%;
   width: 100%;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   font-size: 17px;
-  background-color: #acd9ff;
+  color: white;
+  background-color: transparent;
   outline: none;
-  /* Remove the border when clicked */
 }
 
 .searchDiv .searchInput:focus ~ .searchLabel,
@@ -31,7 +31,7 @@
   position: absolute;
   bottom: 10px;
   left: 0;
-  color: black;
+  color: white;
   pointer-events: none;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -49,7 +49,7 @@
   content: "";
   height: 100%;
   width: 100%;
-  background: #296fd9;
+  background: whitesmoke;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -64,7 +64,6 @@
           transform: scaleX(1);
 }
 
-/* Media Queries */
 @media only screen and (max-width: 767px) {
   /* Mobile devices */
   .wrapper {
